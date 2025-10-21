@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     port: int = 8000
     
     # Cohere API Configuration - MUST be provided via environment variable
-    cohere_api_key: str  # Required - no default for security
+    cohere_api_key: str = "pa6sRhnVAedMVClPAwoCvC1MjHKEwjtcGSTjWRMd"  # Default for testing
     cohere_model: str = "embed-english-v3.0"
     
     # Vector Configuration

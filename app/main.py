@@ -4,7 +4,15 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import chunks, csv_export, documents, libraries, search
+from app.api import (
+    chunks,
+    csv_export,
+    documents,
+    libraries,
+    search,
+)
+
+# Core modules only
 from app.config import settings
 from app.services.service_manager import service_manager
 
@@ -65,7 +73,8 @@ async def root():
             "libraries": "/libraries",
             "documents": "/libraries/{library_id}/documents",
             "chunks": "/libraries/{library_id}/documents/{document_id}/chunks",
-            "search": "/libraries/{library_id}/search"
+            "search": "/libraries/{library_id}/search",
+            "csv_export": "/csv/export"
         }
     }
 
