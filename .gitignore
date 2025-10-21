@@ -44,5 +44,10 @@ htmlcov/
 *.csv
 data/
 
+# Environment variables
+.env
+.env.local
+.env.production
+
 # Logs
 *.log

@@ -81,7 +81,12 @@ app/
 
 4. **Set environment variables**
    ```bash
+   # REQUIRED: Set your Cohere API key
    export COHERE_API_KEY="your_cohere_api_key_here"
+   
+   # Or create a .env file
+   cp env.example .env
+   # Then edit .env with your actual API key
    ```
 
 5. **Run the server**
