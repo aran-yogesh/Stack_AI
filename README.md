@@ -177,6 +177,26 @@ curl -X POST "http://localhost:8000/libraries/{library_id}/search" \
 
 ## 🧪 Testing
 
+### Quick Setup and Testing
+```bash
+# Easy setup and run all examples
+python examples/setup_examples.py --all
+
+# Or run specific test types
+python examples/run_tests.py --test-type crud
+python examples/run_tests.py --test-type tests
+python examples/run_tests.py --test-type benchmark
+```
+
+### Comprehensive Examples
+The `examples/` directory contains complete examples and testing utilities:
+
+- **`crud_examples.py`**: Complete CRUD operations demonstration
+- **`testing_examples.py`**: Comprehensive test suite with performance benchmarks
+- **`api_usage_examples.md`**: Detailed API usage with cURL and Python examples
+- **`run_tests.py`**: Test runner for easy execution
+- **`setup_examples.py`**: Setup script for environment preparation
+
 ### Run All Tests
 ```bash
 python test_complete_system.py
@@ -199,6 +219,37 @@ async def test():
 
 asyncio.run(test())
 "
+```
+
+### Example Test Results
+```
+🧪 Running Comprehensive Test Suite
+============================================================
+🏥 Testing API Health...
+✅ API health check passed
+
+🏛️  Testing Library CRUD...
+✅ Library CRUD tests passed
+
+📄 Testing Document CRUD...
+✅ Document CRUD tests passed
+
+🧩 Testing Chunk CRUD...
+✅ Chunk CRUD tests passed
+
+🔍 Testing Search Operations...
+✅ Search operation tests passed
+
+⚡ Testing Concurrent Operations...
+✅ Created 10 chunks concurrently in 0.15 seconds
+✅ Performed 5 concurrent searches in 0.08 seconds
+
+📊 Testing Large Dataset...
+✅ Created 100 chunks in 2.34 seconds
+✅ Built index in 0.45 seconds
+✅ Average search time: 0.023 seconds
+
+🎉 All tests passed successfully!
 ```
 
 ## ⚙️ Configuration
