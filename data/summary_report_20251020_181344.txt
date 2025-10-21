@@ -1,0 +1,19 @@
+Vector Database Summary Report
+==================================================
+
+Generated: 2025-10-20T18:13:44.183009
+
+Libraries: 1
+  - Quick Test Library: Quick test
+
+Documents: 1
+  - Quick Test Doc
+
+Chunks: 1
+  - Total text length: 16 characters
+  - Embedding dimension: 1024
+  - Total embeddings: 1
+
+Sample Chunks:
+  1. Quick test chunk...
+     Embedding: [-0.0210, -0.0327, ...]

@@ -1,0 +1,15 @@
+Vector Database Summary Report
+==================================================
+
+Generated: 2025-10-20T18:12:26.924177
+
+Libraries: 1
+  - CSV Demo Library: Library for demonstrating CSV export functionality
+
+Documents: 1
+  - Machine Learning Fundamentals
+
+Chunks: 0
+  - Total text length: 0 characters
+
+Sample Chunks:
